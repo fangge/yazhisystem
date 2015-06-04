@@ -30,7 +30,31 @@
             </div>
             <!-- logo位置-->
             <div class="container">
-                <a href="index.html" class="logo"><img src="img/logo.jpg" alt="67shua.com"/></a>
+                <div class="row">
+                    <div class="col-md-8"><a href="index.html" class="logo"><img src="img/logo.jpg" alt="67shua.com"/></a></div>
+                    <div class="col-md-4">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">帐　号：</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">密　码：</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-5 col-sm-12">
+                                    <button type="submit" class="btn btn-default">注 册</button>
+                                    <button type="submit" class="btn btn-default">登 陆</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <!-- 导航-->
             <nav>
@@ -44,13 +68,104 @@
                         <li class="col-md-2" role="presentation"><a href="">用户中心</a></li>
                     </ul>
                 </div>
-
             </nav>
         </header>
+        <!-- 版头切换-->
+        <section class="container">
+            <div class="banner-wrap">
+                <ul class="banner-img clearfix" id="banner-img">
+                    <li><img src="img/bar-1.jpg" class="img-responsive"/></li>
+                    <li><img src="img/bar-2.jpg" class="img-responsive"/></li>
+                    <li><img src="img/bar-3.jpg" class="img-responsive"/></li>
+                </ul>
+                <ol class="banner-nav" id="banner-nav"></ol>
+            </div>
+        </section>
+        <!-- 登陆后显示 Start-->
+        <!-- 内容-->
+        <article class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sub-panel clearfix">
+                        <h2>我的基本信息</h2>
+                        <img src="img/user.jpg" class="user-pic"/>
+                        <p>会员级别：<span id="user-class">普通</span></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-panel clearfix">
+                        <h2>用户信息</h2>
+                    </div>
+                    <div class="main-panel-cont">
+                        <div class="main-sub-panel">
+                            <ul class="list-unstyled">
+                                <li>用户名：<span id="user-name">哈哈</span></li>
+                                <li>旺   铺：<span id="user-company">广州哈哈公司</span></li>
+                                <li>采购员：<span id="buyer">王王</span></li>
+                            </ul>
+                        </div>
+                        <div class="main-sub-panel"></div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+            </div>
+
+        </article>
+        <!-- 登陆后显示 End-->
+        <div class="bot"></div>
+        <footer>
+            <div class="container">
+                <div class="fo_nav">
+
+                    <a href="http://gzszpt.npower2010-oa.com#">关于我们</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">联系方式</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">支付方式</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">合作专区</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">自助服务</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">帮助中心</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">客服中心</a> 　|　
+                    <!--
+                    <a href="#">联系方式</a>　|　
+                    <a href="#">支付方式</a>　|　
+                    <a href="#">合作专区</a>　|　
+                    <a href="#">自助服务</a>　|　
+                    <a href="#">帮助中心</a>　|　
+                    <a href="#">客服中心</a>
+                -->
+                </div>
+                <div class="fo_txt">
+                    <p>Copyright Reserved 2010-2019© <a href="#">阿里店主网</a></p>
+                    <p>搜索本站关键字：
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店主平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店主网</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店长平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">店长平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店长网</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="js/jquery.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/com.js"></script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+body{ position: relative; min-height:100%;  height: auto !important;  height: 100%; /*IE6²»Ê¶±ðmin-height*/}
 header{width: 100%;}
 .top-bar{height: 40px;border-bottom: 1px solid #CCC;line-height: 40px;}
 nav{width: 100%;height:45px;background: url(../img/bg-nav.jpg) repeat-x}
@@ -6,7 +7,37 @@ nav ul{padding-top: 5px;}
 nav ul li a{height: 40px;}
 nav li{list-style: none}
 nav li a{text-align: center;color: #fff;border-top-left-radius: 6px;border-top-right-radius: 6px;}
+.banner-wrap{width:100%;margin: 0 auto;position: relative}
+.banner-img{width: 100%;margin: 0;padding: 0;position: relative;z-index: 40}
+.banner-img li{width: 100%;list-style: none;position: absolute}
+.banner-img li img{width: 100%;}
+.banner-nav{position: absolute;right:10px;bottom:10px;z-index: 50;margin: 0;padding: 0}
+.banner-nav li{  display: inline-block;width: 25px;height: 10px;  margin-left: 5px;  background: #000;}
+.banner-nav li.current{opacity: 0.4;filter:alpha(opacity=40)}
+.form-horizontal .control-label{padding-right: 0}
+.form-horizontal .form-group{margin-bottom: 5px}
+.form-control{height: 30px;line-height: 30px;}
+header .btn-default{width: 60px;height: 22px;line-height: 22px;text-align: center;padding: 0}
+header form{margin-top: 4px}
+article{margin-top: 30px;}
+.bot{padding-bottom: 120px}
+footer{position: absolute;width: 100%;height: 100px;bottom:0;border-top: 5px solid #0170d9;  background: #d4ecff;text-align: center}
+footer p{margin:4px 0}
+footer a,footer{color: #666}
+.fo_nav{margin-top: 16px;}
+.sub-panel{padding: 4px;height: auto;border: 1px solid #dcecfa}
+.sub-panel h2{width: 100%;height: 32px;line-height: 32px;background: #056AB0 url(../img/title.jpg) no-repeat 8px 10px;font-size:14px;font-weight: bold;margin: 0;color: #fff;padding-left:10%;margin-bottom: 8px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+.sub-panel .user-pic{float:left;margin-right: 16px;}
+.sub-panel p{color: #000;font-size: 12px;font-weight: 700}
+.main-panel h2{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
+.main-panel-cont{width: 100%;border-top:2px solid #0479dc;}
+.main-sub-panel{width: 50%;padding: 20px;background: #e4f6fc;float:left;}
+.main-sub-panel li{margin-bottom: 8px;font-weight: 700}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
+    footer{height: auto}
 }
