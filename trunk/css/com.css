@@ -6,7 +6,14 @@ nav .container{height: 45px;}
 nav ul{padding-top: 5px;}
 nav ul li a{height: 40px;}
 nav li{list-style: none}
-nav li a{text-align: center;color: #fff;border-top-left-radius: 6px;border-top-right-radius: 6px;}
+nav li a{text-align: center;color: #fff;border-top-left-radius: 6px;border-top-right-radius: 6px;font-weight: 700}
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover {
+    background-color: #fff;
+    color:#014579 ;
+}
+.nav>li>a:focus,.nav>li>a:hover {
+    color:#014579 ;
+}
 .banner-wrap{width:100%;margin: 0 auto;position: relative}
 .banner-img{width: 100%;margin: 0;padding: 0;position: relative;z-index: 40}
 .banner-img li{width: 100%;list-style: none;position: absolute}
@@ -41,7 +48,14 @@ footer a,footer{color: #666}
 .forum{margin: 0;padding: 0;margin-left: 6px;}
 .forum li{  height: 30px;overflow: hidden;line-height: 30px;  padding-left: 10px;  background: url(../img/title2.jpg) no-repeat 0 13px;}
 .forum li a{color: #666;font-size: 12px;}
-.red{color: red}
+.red{color:#f00}
+.reg-title{  height: 36px;  background: #e6f3fc;margin-bottom: 15px;}
+.reg-title a{  width: 140px;  height: 36px;  display: block;  text-align: center;  line-height: 36px;  color: #fff;  background: url(../img/reg.gif) center center no-repeat;  font-size: 14px;  }
+.reg-wrap{  height: auto;  margin-top: 15px;  border: 1px solid #9dd1f3;  padding: 15px 17px;color: #000}
+
+.reg-tip1{  height: 28px;  padding: 4px 0 0 8px;  margin-bottom: 17px;  background: #ebeff3;  border: 1px solid #d8dadb;}
+.reg-tip1 .login{color: #f46d13}
+.reg-tip2{  height: 26px;  padding: 4px 0 0 8px;  background: #f0f8ff;  border: 1px solid #cee6fc;  margin-bottom: 7px;}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
