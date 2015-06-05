@@ -52,7 +52,7 @@ footer a,footer{color: #666}
 .reg-title{  height: 36px;  background: #e6f3fc;margin-bottom: 15px;}
 .reg-title a{  width: 140px;  height: 36px;  display: block;  text-align: center;  line-height: 36px;  color: #fff;  background: url(../img/reg.gif) center center no-repeat;  font-size: 14px;  }
 .reg-wrap{  height: auto;  margin-top: 15px;  border: 1px solid #9dd1f3;  padding: 15px 17px;color: #000}
-
+.reg-wrap form{width: 80%;margin: 0 auto}
 .reg-tip1{  height: 28px;  padding: 4px 0 0 8px;  margin-bottom: 17px;  background: #ebeff3;  border: 1px solid #d8dadb;}
 .reg-tip1 .login{color: #f46d13}
 .reg-tip2{  height: 26px;  padding: 4px 0 0 8px;  background: #f0f8ff;  border: 1px solid #cee6fc;  margin-bottom: 7px;}
