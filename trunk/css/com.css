@@ -20,7 +20,7 @@ nav li a{text-align: center;color: #fff;border-top-left-radius: 6px;border-top-r
 header .btn-default{width: 60px;height: 22px;line-height: 22px;text-align: center;padding: 0}
 header form{margin-top: 4px}
 article{margin-top: 30px;}
-.bot{padding-bottom: 120px}
+.bot{padding-bottom: 150px}
 footer{position: absolute;width: 100%;height: 100px;bottom:0;border-top: 5px solid #0170d9;  background: #d4ecff;text-align: center}
 footer p{margin:4px 0}
 footer a,footer{color: #666}
@@ -34,10 +34,18 @@ footer a,footer{color: #666}
 .sub-panel p{color: #000;font-size: 12px;font-weight: 700}
 .main-panel h2{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
 .main-panel-cont{width: 100%;border-top:2px solid #0479dc;}
-.main-sub-panel{width: 50%;padding: 20px;background: #e4f6fc;float:left;}
+.main-sub-panel{width: 49.9%;padding: 20px;background: #e4f6fc;float:left;min-height: 224px;}
 .main-sub-panel li{margin-bottom: 8px;font-weight: 700}
+.main-sub-panel1{margin-right: 1px;}
+.mar-bot-50{margin-bottom: 50px!important;}
+.forum{margin: 0;padding: 0;margin-left: 6px;}
+.forum li{  height: 30px;overflow: hidden;line-height: 30px;  padding-left: 10px;  background: url(../img/title2.jpg) no-repeat 0 13px;}
+.forum li a{color: #666;font-size: 12px;}
+.red{color: red}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
+    .main-sub-panel{width: 100%;float:none;margin-bottom: 2px;}
+    .main-sub-panel1{margin: 0}
     footer{height: auto}
 }

@@ -160,7 +160,7 @@ $(function () {
         },
         init:function(){
             var _this = this;
-            _this.resizeBanner();
+            setTimeout(function(){_this.resizeBanner();},20)
             $(window).resize(function(){_this.resizeBanner()})
             for (var i = 0; i < $("#banner-img li").length; i++) {
                 $("#banner-nav").append("<li></li>")
