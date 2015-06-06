@@ -68,6 +68,7 @@ footer a,footer{color: #666}
 #submitTask{text-align: center;}
 #submitTask .btn{display: inline-block}
 .modal-title{font-size: 22px;font-weight: 700}
+#public-table td{line-height: 2}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
