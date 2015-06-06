@@ -6,12 +6,12 @@
 $(function () {
     var yzFun = {
         /**
-         * °æÍ·ÇĞ»»
+         * ç‰ˆå¤´åˆ‡æ¢
          * @param obj
          * @constructor
          */
         Switch: function(obj){
-            //¼¤»î
+            //æ¿€æ´»
             var _active = function(index){
                     _data.index = index;
                     if (_data.conDoms)
@@ -21,7 +21,7 @@ $(function () {
                     if (_data.btnDoms)
                         _activeDom(index, _data.btnDoms);
                 },
-            //¼¤»îdom
+            //æ¿€æ´»dom
                 _activeDom = function(index, dataObj){
                     $.each(dataObj, function(){
                         $.each(this, function(j){
@@ -65,7 +65,7 @@ $(function () {
                     });
                 },
 
-            //Ä¬ÈÏÖµ
+            //é»˜è®¤å€¼
 
                 _data = {
                     btnDoms: null,
@@ -152,20 +152,35 @@ $(function () {
             _play();
         },
         /**
-         * ÖØÖÃ°æÍ·ÇĞ»»¸ß¶È
+         * é‡ç½®ç‰ˆå¤´åˆ‡æ¢é«˜åº¦
          */
         resizeBanner:function(){
             var h = $('#banner-img li').eq(0).find('img').css('height');
             $('.banner-wrap').css('height',h);
         },
+        addUrl:function(){
+            var txt = '<div class="url-list clearfix"><label for="inputEmail3" class="col-md-3 control-label">å®è´ç½‘å€ï¼š</label>' +
+                '<div class="col-md-7">' +
+                '<input type="text" class="form-control public-url" id="" placeholder="">' +
+                '<a class="delect btn btn-info">ç§»é™¤</a></div></div>';
+            $('#add').on('click',function(){
+                $('#url-wrap').append(txt);
+                $('.delect').on('click',function(){
+                    $(this).closest('.url-list').remove();
+                })
+            })
+
+
+        },
         init:function(){
             var _this = this;
-            setTimeout(function(){_this.resizeBanner();},20)
+            setTimeout(function(){_this.resizeBanner();},50)
             $(window).resize(function(){_this.resizeBanner()})
             for (var i = 0; i < $("#banner-img li").length; i++) {
                 $("#banner-nav").append("<li></li>")
             }
             _this.Switch("#banner-nav li", "#banner-img li");
+            _this.addUrl()
         }
     }
 
