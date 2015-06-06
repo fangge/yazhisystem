@@ -56,6 +56,8 @@ footer a,footer{color: #666}
 .reg-tip1{  height: 28px;  padding: 4px 0 0 8px;  margin-bottom: 17px;  background: #ebeff3;  border: 1px solid #d8dadb;}
 .reg-tip1 .login{color: #f46d13}
 .reg-tip2{  height: 26px;  padding: 4px 0 0 8px;  background: #f0f8ff;  border: 1px solid #cee6fc;  margin-bottom: 7px;}
+.pwd{display:inline-block;height: 35px;line-height: 35px;text-align: center;padding: 0 6px;}
+.tip2{color: #b1b1b1}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
