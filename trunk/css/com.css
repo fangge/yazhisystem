@@ -18,9 +18,9 @@ nav li a{text-align: center;color: #fff;border-top-left-radius: 6px;border-top-r
 .banner-img{width: 100%;margin: 0;padding: 0;position: relative;z-index: 40}
 .banner-img li{width: 100%;list-style: none;position: absolute}
 .banner-img li img{width: 100%;}
-.banner-nav{position: absolute;right:10px;bottom:10px;z-index: 50;margin: 0;padding: 0}
-.banner-nav li{  display: inline-block;width: 25px;height: 10px;  margin-left: 5px;  background: #000;}
-.banner-nav li.current{opacity: 0.4;filter:alpha(opacity=40)}
+.banner-nav{z-index: 50;}
+.carousel-indicators li{  display: inline-block;width: 25px;height: 10px;  margin-left: 5px;  background-color: #000;border: 0;border-radius: 0}
+.carousel-indicators .active{width: 25px;height: 10px; border: 0;border-radius: 0;opacity: 0.4;filter:alpha(opacity=40);position:relative;top:-1px;margin-left: 5px;}
 .form-horizontal .control-label{padding-right: 0}
 .form-horizontal .form-group{margin-bottom: 5px}
 .form-control{height: 30px;line-height: 30px;}
@@ -39,7 +39,7 @@ footer a,footer{color: #666}
     border-radius: 5px;}
 .sub-panel .user-pic{float:left;margin-right: 16px;}
 .sub-panel p{color: #000;font-size: 12px;font-weight: 700}
-.main-panel h2{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
+.main-panel h2,.main-panel .active{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
 .main-panel-cont{width: 100%;border-top:2px solid #0479dc;}
 .main-sub-panel{width: 49.9%;padding: 20px;background: #e4f6fc;float:left;min-height: 224px;}
 .main-sub-panel li{margin-bottom: 8px;font-weight: 700}
@@ -68,8 +68,14 @@ footer a,footer{color: #666}
 #submitTask,#submitTask2{text-align: center;}
 #submitTask .btn,#submitTask2 .btn{display: inline-block}
 .modal-title{font-size: 22px;font-weight: 700}
-#public-table td{line-height: 2}
+#public-table td,.nav-tabs td{line-height: 2}
 .public-user{padding-right: 4px;}
+.nav-tabs{border: 0}
+
+.nav-tabs h2{background: #DCECFB;}
+.nav-tabs h2 a{color: #0479dc;}
+.nav-tabs h2.active a{color: #fff;}
+.nav-tabs h2 a:hover{text-decoration: none}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}

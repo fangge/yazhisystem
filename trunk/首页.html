@@ -62,9 +62,9 @@
                     <ul class="row nav">
                         <li class="col-md-2 open" role="presentation"><a href="首页.html">首页</a></li>
                         <li class="col-md-2" role="presentation"><a href="任务大厅.html">任务列表</a></li>
-                        <li class="col-md-2" role="presentation"><a href="">我发布的任务</a></li>
-                        <li class="col-md-2" role="presentation"><a href="">我接手的任务</a></li>
-                        <li class="col-md-2" role="presentation"><a  data-toggle="modal" data-target="#publicTask">发布任务</a></li>
+                        <li class="col-md-2" role="presentation"><a href="我发布的任务.html">我发布的任务</a></li>
+                        <li class="col-md-2" role="presentation"><a href="我接手的任务.html">我接手的任务</a></li>
+                        <li class="col-md-2" role="presentation"><a data-toggle="modal" data-target="#publicTask">发布任务</a></li>
                         <li class="col-md-2" role="presentation"><a href="">用户中心</a></li>
                     </ul>
                 </div>
@@ -72,13 +72,17 @@
         </header>
         <!-- 版头切换-->
         <section class="container">
-            <div class="banner-wrap">
-                <ul class="banner-img clearfix" id="banner-img">
-                    <li><img src="img/bar-1.jpg" class="img-responsive"/></li>
-                    <li><img src="img/bar-2.jpg" class="img-responsive"/></li>
-                    <li><img src="img/bar-3.jpg" class="img-responsive"/></li>
+            <div class="banner-wrap carousel slide" data-ride="carousel" id="banner-img-wrap">
+                <ul class="banner-img clearfix carousel-inner" id="banner-img"  role="listbox">
+                    <li class="item active"><img src="img/bar-1.jpg" class="img-responsive"/></li>
+                    <li class="item"><img src="img/bar-2.jpg" class="img-responsive"/></li>
+                    <li class="item"><img src="img/bar-3.jpg" class="img-responsive"/></li>
                 </ul>
-                <ol class="banner-nav" id="banner-nav"></ol>
+                <ol class="banner-nav carousel-indicators" id="banner-nav">
+                    <li data-target="#banner-img-wrap" data-slide-to="0" class="active"></li>
+                    <li data-target="#banner-img-wrap" data-slide-to="1"></li>
+                    <li data-target="#banner-img-wrap" data-slide-to="2"></li>
+                </ol>
             </div>
         </section>
         <!-- 登陆后显示 Start-->
