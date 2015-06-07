@@ -39,7 +39,7 @@ footer a,footer{color: #666}
     border-radius: 5px;}
 .sub-panel .user-pic{float:left;margin-right: 16px;}
 .sub-panel p{color: #000;font-size: 12px;font-weight: 700}
-.main-panel h2,.main-panel .active{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
+.main-panel h2,.nav-tabs li{display: inline-block;width: auto;padding: 0 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: #056AB0;color: #fff;font-size: 14px;height: 33px;line-height: 33px;text-align: center;margin: 0}
 .main-panel-cont{width: 100%;border-top:2px solid #0479dc;}
 .main-sub-panel{width: 49.9%;padding: 20px;background: #e4f6fc;float:left;min-height: 224px;}
 .main-sub-panel li{margin-bottom: 8px;font-weight: 700}
@@ -72,10 +72,15 @@ footer a,footer{color: #666}
 .public-user{padding-right: 4px;}
 .nav-tabs{border: 0}
 
-.nav-tabs h2{background: #DCECFB;}
-.nav-tabs h2 a{color: #0479dc;}
-.nav-tabs h2.active a{color: #fff;}
-.nav-tabs h2 a:hover{text-decoration: none}
+.nav-tabs li{background: #DCECFB;margin-right: 6px;}
+.nav-tabs li.active{background: #056AB0}
+.nav-tabs li a,.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{color: #0479dc;  cursor: default;  background: none;  border: 0;border-radius: 0;margin: 0;line-height: 33px;padding: 0}
+.nav-tabs li.active a{color: #fff!important;}
+.nav-tabs li a:hover{text-decoration: none}
+.nav>li>a:focus,.nav>li>a:hover {
+    text-decoration: none;
+    background: none
+}
 @media (max-width: 1000px) {
     nav{height: 100%;background-size:100% 100% }
     nav .container{height: 100%}
