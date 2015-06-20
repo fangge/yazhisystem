@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+<meta charset="UTF-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+<script> (function () {var tags = ['header', 'footer', 'nav', 'section', 'article', 'aside']; for (var i in tags) {document.createElement(tags[i]);}})()</script>
+<![endif]-->
+<link rel="stylesheet" href="css/main.css?rel=1434778813963">
+</head>
+    <body>
+        <header>
+            <!-- 顶部通栏-->
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">你好，欢迎来到xx主网！<a href="注册.html">免费注册</a></div>
+                        <div class="col-md-8">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <!-- logo位置-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8"><a href="首页.html" class="logo"><img src="img/logo.jpg" alt="67shua.com"/></a></div>
+                    <div class="col-md-4">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label">帐　号：</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control"  placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">密　码：</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-5 col-sm-12">
+                                    <a type="submit" class="btn btn-default" href="注册.html">注 册</a>
+                                    <button type="submit" class="btn btn-default">登 陆</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航-->
+            <nav>
+                <div class="container">
+                    <ul class="row nav">
+                        <li class="col-md-2" role="presentation"><a href="首页.html">首页</a></li>
+                        <li class="col-md-2" role="presentation"><a href="任务大厅.html">任务大厅</a></li>
+                        <li class="col-md-2" role="presentation"><a href="我发布的任务.html">我发布的任务</a></li>
+                        <li class="col-md-2 open" role="presentation"><a href="我接手的任务.html">我接手的任务</a></li>
+                        <li class="col-md-2" role="presentation"><a  data-toggle="modal" data-target="#publicTask">发布任务</a></li>
+                        <li class="col-md-2" role="presentation"><a href="">用户中心</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 登陆后显示 Start-->
+        <!-- 内容-->
+        <article class="container"  role="tabpanel">
+            <ul class="main-panel nav nav-tabs" id="tab" role="tablist">
+                <li role="presentation" class="active"><a  href="#tab1"  aria-controls="tab1" role="tab" data-toggle="tab">所有接手任务</a></li>
+                <li role="presentation"><a  href="#tab2"  aria-controls="tab2" role="tab" data-toggle="tab">等待审核</a></li>
+                <li role="presentation"><a  href="#tab3"  aria-controls="tab3" role="tab" data-toggle="tab">等待完成</a></li>
+                <li role="presentation"><a  href="#tab4"  aria-controls="tab4" role="tab" data-toggle="tab">等待收货</a></li>
+                <li role="presentation"><a  href="#tab5"  aria-controls="tab5" role="tab" data-toggle="tab">完成任务</a></li>
+            </ul>
+            <ul class="tab-content list-unstyled">
+                <li  class="tab-pane active" id="tab1"  role="tabpanel">
+                    <div class="main-panel-cont">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>任务名称</th>
+                                <th>发布人</th>
+                                <th>预计价格</th>
+                                <th>收货时限</th>
+                                <th>发布时间</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-warning"   data-toggle="modal" data-target="#waitReceipt">等待收货</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-success"   data-toggle="modal" data-target="#completeMission">完成任务</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </li>
+                <li class="tab-pane"  id="tab2"  role="presentation">
+                    <div class="main-panel-cont">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>任务名称</th>
+                                <th>接手人</th>
+                                <th>任务价格</th>
+                                <th>收货时限</th>
+                                <th>发布时间</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈2</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-warning"   data-toggle="modal" data-target="#waitReceipt">等待收货</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-success"   data-toggle="modal" data-target="#completeMission">完成任务</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </li>
+                <li class="tab-pane" id="tab3"  role="presentation">
+                    <div class="main-panel-cont">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>任务名称</th>
+                                <th>接手人</th>
+                                <th>任务价格</th>
+                                <th>收货时限</th>
+                                <th>发布时间</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈3</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-warning"   data-toggle="modal" data-target="#waitReceipt">等待收货</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-success"   data-toggle="modal" data-target="#completeMission">完成任务</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </li>
+                <li class="tab-pane" id="tab4"  role="presentation">
+                    <div class="main-panel-cont">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>任务名称</th>
+                                <th>接手人</th>
+                                <th>任务价格</th>
+                                <th>收货时限</th>
+                                <th>发布时间</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈4</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-warning"   data-toggle="modal" data-target="#waitReceipt">等待收货</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-success"   data-toggle="modal" data-target="#completeMission">完成任务</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </li>
+                <li class="tab-pane" id="tab5"  role="presentation">
+                    <div class="main-panel-cont">
+                        <table class="table table-hover">
+                            <tr>
+                                <th>任务名称</th>
+                                <th>接手人</th>
+                                <th>任务价格</th>
+                                <th>收货时限</th>
+                                <th>发布时间</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈5</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-warning"   data-toggle="modal" data-target="#waitReceipt">等待收货</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-success"   data-toggle="modal" data-target="#completeMission">完成任务</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+                            <tr>
+                                <td>哈哈哈</td>
+                                <td><span class="public-user red">admin123</span>会员</td>
+                                <td class="red">500元</td>
+                                <td>按物流</td>
+                                <td><img src="img/time.jpg" alt=""/>2015-05-14 14:41:03</td>
+                                <td>假聊,双IP,加入分销， 评分，	留言</td>
+                                <td><a class="btn btn-primary"   data-toggle="modal" data-target="#waitGetTask">等待接手</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </li>
+            </ul>
+
+
+        </article>
+        <!-- 登陆后显示 End-->
+        <div class="bot"></div>
+        <footer>
+            <div class="container">
+                <div class="fo_nav">
+
+                    <a href="http://gzszpt.npower2010-oa.com#">关于我们</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">联系方式</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">支付方式</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">合作专区</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">自助服务</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">帮助中心</a> 　|　
+
+                    <a href="http://gzszpt.npower2010-oa.com#">客服中心</a> 　|　
+                    <!--
+                    <a href="#">联系方式</a>　|　
+                    <a href="#">支付方式</a>　|　
+                    <a href="#">合作专区</a>　|　
+                    <a href="#">自助服务</a>　|　
+                    <a href="#">帮助中心</a>　|　
+                    <a href="#">客服中心</a>
+                -->
+                </div>
+                <div class="fo_txt">
+                    <p>Copyright Reserved 2010-2019© <a href="#">阿里店主网</a></p>
+                    <p>搜索本站关键字：
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店主平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店主网</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店长平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">店长平台</a>|
+
+                        <a href="http://gzszpt.npower2010-oa.com#">阿里店长网</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 发布任务-->
+        <div class="modal fade" id="publicTask" tabindex="-1" role="dialog" aria-labelledby="发布任务" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">发布任务</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-5 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-5 txtC">采购网：王王</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control public-url"  placeholder="">
+                                    数量：
+                                    <input type="text" class="form-control publoc-num"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="url-wrap">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3">&nbsp;</label>
+                                <div class="col-md-7">
+                                    <a class="btn  btn-primary" id="add">点击添加</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt"  placeholder="">
+                                    <a class="btn  btn-primary copy">复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control"  placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间：</label>
+                                <div class="col-md-8">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">立即
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">1天
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">2天
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3">3天
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option3">4天
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3">5天
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group" id="submitTask">
+                                <a class="btn btn-success">确认发布</a>
+                                <a class="btn btn-primary">保存模板</a>
+                                <a class="btn btn-info">选择模板</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 等待交易-->
+        <div class="modal fade" id="waitGetTask" tabindex="-1" role="dialog" aria-labelledby="等待交易" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" >发布人信息
+                            <p class="pull-right">会员信息<span>admin123</span></p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：女装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="第一页第十排第十二个" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">点击QQ联系</label>
+                                <div class="col-md-2">
+                                    <input type="checkbox"  id="" placeholder="">
+                                </div>
+                                <div class="col-md-5">手机：13800008000</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3" disabled="disabled">不要谢我</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control input-txt-s pull-left" id="" placeholder="">
+                                    <a class="btn  btn-primary pull-left">确认单号</a>
+                                    <a href="" target="_blank" class="red pull-right">投诉</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-header">
+                        <h4 class="modal-title" >我的信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：男装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control public-url" id="" placeholder="">
+                                    数量：
+                                    <input type="text" class="form-control publoc-num" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group submitTask2">
+                                <a class="btn btn-info">等待交易</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 等待收货-->
+        <div class="modal fade" id="waitReceipt" tabindex="-1" role="dialog" aria-labelledby="等待收货" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" >发布人信息
+                            <p class="pull-right">会员信息<span>admin123</span></p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：女装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="第一页第十排第十二个" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">点击QQ联系</label>
+                                <div class="col-md-2">
+                                    <input type="checkbox"  id="" placeholder="">
+                                </div>
+                                <div class="col-md-5">手机：13800008000</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3" disabled="disabled">不要谢我</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control input-txt-s pull-left" value="111111111111" disabled>
+                                    <a class="btn  btn-primary pull-left copy">复制</a>
+                                    <a href="" target="_blank" class="red pull-right">投诉</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-header">
+                        <h4 class="modal-title" >我的信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：男装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control public-url" id="" placeholder="">
+                                    数量：
+                                    <input type="text" class="form-control publoc-num" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary copy" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control input-txt-s pull-left" value="111111111111" disabled>
+                                    <a class="btn  btn-primary pull-left copy">复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group submitTask2">
+                                <a class="btn btn-primary">等待收货</a>
+                                <div id="countdown" time="2015-6-18 16:20"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 完成任务-->
+        <div class="modal fade" id="completeMission" tabindex="-1" role="dialog" aria-labelledby="完成任务" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" >发布人信息
+                            <p class="pull-right">会员信息<span>admin123</span></p>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：女装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="第一页第十排第十二个" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">点击QQ联系</label>
+                                <div class="col-md-2">
+                                    <input type="checkbox"  id="" placeholder="">
+                                </div>
+                                <div class="col-md-5">手机：13800008000</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3" disabled="disabled">不要谢我</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control input-txt-s pull-left" value="111111111111" disabled>
+                                    <a class="btn  btn-primary pull-left copy">复制</a>
+                                    <a href="" target="_blank" class="red pull-right" style="padding-left: 6px;">投诉</a>
+                                    <p class="pull-right">已收货</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-header">
+                        <h4 class="modal-title" >我的信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-md-4 txtC">旺铺名称：广州市哈哈公司</div>
+                                <div class="col-md-3 txtC">采购网：王王</div>
+                                <div class="col-md-3 txtC">行业：男装</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">任务预计金额：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="500元" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">宝贝网址：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control public-url" id="" placeholder="">
+                                    数量：
+                                    <input type="text" class="form-control publoc-num" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词搜索：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control search-txt" id="" placeholder="">
+                                    <a class="btn  btn-primary copy" >复制</a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">关键词提示：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">添加照片：</label>
+                                <div class="col-md-7">
+                                    <input type="file" name="" id=""/>
+                                    <div class="upload-img"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">收货时间</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="" placeholder="" value="3天" disabled="disabled">
+                                    <p class="pull-left" style="padding-right:6px;" id="score">评分：<span class="red">5分</span></p>
+                                    <p class="pull-right">假聊 拒绝同行 加入分销 双IP</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">留言：</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-md-3 control-label">订单号：</label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control input-txt-s pull-left" value="111111111111" disabled>
+                                    <a class="btn  btn-primary pull-left copy">复制</a>
+                                    <p class="pull-right">已收货</p>
+                                </div>
+                            </div>
+                            <div class="form-group submitTask2">
+                                <a class="btn btn-success">确认完成</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/base.js?rel=1434778813963"></script>
+    <script src="js/com.js"></script>
+    </body>
+</html>

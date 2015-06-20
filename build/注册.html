@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <!--[if lt IE 9]>
+    <script> (function () {var tags = ['header', 'footer', 'nav', 'section', 'article', 'aside']; for (var i in tags) {document.createElement(tags[i]);}})()</script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css?rel=1434778813963">
+</head>
+<body>
+<header>
+    <!-- 顶部通栏-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">你好，欢迎来到xx主网！<a href="注册.html">免费注册</a></div>
+                <div class="col-md-8">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- logo位置-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8"><a href="首页.html" class="logo"><img src="img/logo.jpg" alt="67shua.com"/></a></div>
+            <div class="col-md-4">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">帐　号：</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label">密　码：</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-5 col-sm-12">
+                            <a type="submit" class="btn btn-default" href="注册.html">注 册</a>
+                            <button type="submit" class="btn btn-default">登 陆</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 导航-->
+    <nav>
+        <div class="container">
+            <ul class="row nav">
+                <li class="col-md-2 open" role="presentation"><a href="首页.html">首页</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="container">
+    <h2 class="reg-title"><a>注册</a></h2>
+    <div class="reg-wrap">
+        <p class="reg-tip1">如果您已经是会员请点击<a href="#" class="login">登录</a>，（带<em class="red"> * </em>号的必须填写）</p>
+        <p class="reg-tip2">用户基本信息：</p>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">会员名称：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip">用户名请输入4-16位字符，英文、数字、下划线的组</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">登陆名称：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip">密码请输入6位以上字符，允许空格。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">密码强度：</label>
+                <div class="col-sm-8">
+                    <a id="pwd_lower" class="pwd">　弱</a><a  id="pwd_middle" class="pwd">　中　</a><a id="pwd_high" class="pwd">强</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">确认登录密码：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="" placeholder="">
+                    <p class="tip">请输入确认密码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">安全密码：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="" placeholder="">
+                    <p class="tip">请输入安全密码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">确认登录密码：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="" placeholder="">
+                    <p class="tip">请输入确认安全密码</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">提示问题：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <select class="form-control">
+                        <option>----请您选择问题----</option>
+                        <option>----111----</option>
+                        <option>----111----</option>
+                        <option>----222----</option>
+                        <option>----333----</option>
+                        <option>----444----</option>
+                    </select>
+                    <p class="tip tip2">请选择忘记密码时，找回密码提示的问题。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">提示答案：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip tip2">请输入3位以上找回密码时的问题答案，请牢记。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">手机号码：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip tip2">请输入合法的手机号码。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">店铺名称：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip">请输入昵称</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">QQ号码：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip tip2">请输入您的真实QQ号，主要用于交易时方便对方联系。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">邮箱地址：<span class="red">*</span></label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="" placeholder="">
+                    <p class="tip tip2">请输入您常用的电子邮箱号，注：忘记密码找回时需。</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <label for="">
+                        <input type="checkbox">我已阅读并完全接受服务条款
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <button type="submit" class="btn btn-primary">立 即 免 费 注 册</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+<!-- 登陆后显示 End-->
+<div class="bot"></div>
+<footer>
+    <div class="container">
+        <div class="fo_nav">
+
+            <a href="http://gzszpt.npower2010-oa.com#">关于我们</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">联系方式</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">支付方式</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">合作专区</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">自助服务</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">帮助中心</a> 　|　
+
+            <a href="http://gzszpt.npower2010-oa.com#">客服中心</a> 　|　
+            <!--
+            <a href="#">联系方式</a>　|　
+            <a href="#">支付方式</a>　|　
+            <a href="#">合作专区</a>　|　
+            <a href="#">自助服务</a>　|　
+            <a href="#">帮助中心</a>　|　
+            <a href="#">客服中心</a>
+        -->
+        </div>
+        <div class="fo_txt">
+            <p>Copyright Reserved 2010-2019© <a href="#">阿里店主网</a></p>
+            <p>搜索本站关键字：
+
+                <a href="http://gzszpt.npower2010-oa.com#">阿里店主平台</a>|
+
+                <a href="http://gzszpt.npower2010-oa.com#">阿里店主网</a>|
+
+                <a href="http://gzszpt.npower2010-oa.com#">阿里店长平台</a>|
+
+                <a href="http://gzszpt.npower2010-oa.com#">阿里平台</a>|
+
+                <a href="http://gzszpt.npower2010-oa.com#">店长平台</a>|
+
+                <a href="http://gzszpt.npower2010-oa.com#">阿里店长网</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="js/base.js?rel=1434778813963"></script>
+<script src="js/com.js"></script>
+</body>
+</html>
