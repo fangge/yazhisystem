@@ -45,9 +45,11 @@ $(function () {
         init:function(){
 
             var _this = this;
+            if($('#countdown').length >0){
+                var t =$('#countdown').attr("time").replace(/-/g,"/");
+                _this.timeAni(t);
+            }
 
-            var t =$('#countdown').attr("time").replace(/-/g,"/");
-            _this.timeAni(t);
 
             $('.carousel').carousel();
             $('#tab').find('a').click(function (e) {

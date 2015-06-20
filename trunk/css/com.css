@@ -84,6 +84,7 @@ footer a,footer{color: #666}
     text-decoration: none;
     background: none
 }
+.upload-img{width: 200px;height: 200px;border:1px dotted #000}
 .input-txt-s{width: 40%;margin-right: 13px;}
 a.red{font-size: 14px;}
 @media (max-width: 1000px) {
